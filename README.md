@@ -2,7 +2,9 @@
 
 A Simon Says memory game for Arduino, written as a **non-blocking finite state machine**. The board plays a growing sequence of colored lights, and the player repeats it on four buttons. The firmware never calls `delay()`: every pass through `loop()` reads the buttons and advances the game using `millis()` timing, so it responds to input at any moment.
 
-<!-- Demo: once you have a recording, upload it as docs/demo.gif and replace this line with ![Demo](docs/demo.gif) -->
+![Demo](docs/demo.gif)
+
+**[▶ Try it in your browser on Wokwi](https://wokwi.com/projects/480073055718248449)**, no hardware needed.
 
 ## Features
 
@@ -38,7 +40,7 @@ A Simon Says memory game for Arduino, written as a **non-blocking finite state m
 
 ## How to play
 
-1. Upload `Simon_Says/Simon_Says.ino` with the Arduino IDE.
+1. Upload `Simon_Says/Simon_Says.ino` with the Arduino IDE, or open the [Wokwi simulation](https://wokwi.com/projects/480073055718248449) and press play.
 2. The board shows the sequence, one color at a time.
 3. Repeat it by pressing the matching buttons. Your answer counts when you release each button.
 4. Get it right and all LEDs flash once, then the sequence grows by one color.
@@ -115,3 +117,4 @@ Open the Serial Monitor at **9600 baud** to follow the game:
 | File | Description |
 |---|---|
 | `Simon_Says/Simon_Says.ino` | Complete sketch (the Arduino IDE expects it inside a folder with the same name) |
+| `docs/demo.gif` | Recording of the game running in the Wokwi simulator |
